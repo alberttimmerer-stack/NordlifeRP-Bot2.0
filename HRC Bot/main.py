@@ -19,7 +19,6 @@ class MyBot(commands.Bot):
         # Weitere Cogs können hier hinzugefügt werden
         # await self.load_extension("cogs.admin")
         # await self.load_extension("cogs.peacetime")
-        # await self.load_extension("cogs.welcome")
 
         # Slash Commands synchronisieren
         await self.tree.sync()
@@ -40,4 +39,5 @@ if TOKEN is None:
     raise ValueError("❌ Fehler: Keine Umgebungsvariable 'DISCORD_TOKEN' gefunden.")
 
 bot.run(TOKEN)
+
 
